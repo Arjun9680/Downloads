@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <script>
+    let travelsOne ={
+                     travelsName:"orange",
+                     busId:"ora101",
+                     bookings:[], 
+                     book:function(name,seatno)
+                     {
+                        console.log(`${name} is booked seat on ${this.travelsName} travels with seatno is ${seatno}`);
+                        this.bookings.push({passenger:`${name} seatno no is ${seatno} busid ${this.busId}`});
+                     }
+                    };
+                   // travelsOne.book("harsha",53);
+                    //console.log(travelsOne.bookings);
+                    let travelsTwo ={
+                        travelsName:"orange",
+                     busId:"ora101",
+                     bookings:[]
+                    };
+                    let books =travelsOne.book;
+                   // books.call(travelsOne,"arjun",34);
+                    //books.call(travelsTwo,"harish",97);
+
+                   // let parm =["arjun",23];
+                   // books.apply(travelsOne,parm)
+
+                    let a=books.bind(travelsOne)
+                    a("arjun",34)
+    
+  </script>
+</head>
+<body>
+    <h1>document</h1>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../Assignment/fontawesome-free-6.2.1-web/css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            background-color: rgb(20, 20, 20);
+            padding: 20px;
+            text-align: center;
+        }
+
+        ul,
+        li,
+        a {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            text-decoration: none;
+            margin: 3px;
+            color: rgb(248, 248, 249);
+        }
+
+        a:hover {
+
+            box-shadow: 0px 4px 8px rgb(151, 3, 3);
+        }
+
+        #h {
+            color: whitesmoke;
+
+        }
+
+        #bod {
+            position: relative;
+            top: 90px;
+            text-align: center;
+
+        }
+
+        #input {
+            margin-top: 150px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        input {
+            padding: 17px 0px 17px 200px;
+            margin: 5px;
+
+        }
+
+        #input1 {
+            margin: 20px;
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #btn {
+            position: relative;
+            left: 727px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #bd {
+            background-color: rgb(62, 60, 60);
+            height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <div id="h">
+            <h1>LE<span style="background-color: rgb(202, 20, 20); border: 0px solid rgb(104, 33, 33);border-radius:
+                    100px;">G</span>AL<span>I</span>A
+            </h1>
+            <p>ATTORNEYS AT LAW</p>
+        </div>
+
+
+        <ul>
+            <li> <a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICES AREAS</a></li>
+            <li><a href="">OUR TEAM</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div id="bd">
+        <div id="bod">
+            <h1>GET IN TOUCH</h1>
+            <P>phone:<b style="color: blue;">7008412392</b> </P>
+            <p>Email:<b style="color: rgb(206, 32, 32);">abhipani31@gmail.com</b></p>
+            <p>Address:Aswathnagar 2ndcross road,marathalli bangalore india</p>
+        </div>
+        <div id="input">
+            <div id="input1">
+                <input type="text">
+                <input type="text"> <input type="text">
+            </div>
+            <div>
+                <textarea rows="12" cols="45"></textarea>
+            </div>
+        </div>
+        <button id="btn" style="background-color: brown;">SEND MESSAGE</button>
+    </div>
+</body>
+
+</html>
